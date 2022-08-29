@@ -49,7 +49,7 @@ nav .row{
 .main{
     min-height: 100vh;
     margin-top: -10rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.01)), url("/img/bg.jpg") center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.01)), url("../img/bg.jpg") center/cover;
     display: grid;
     place-items: center;
     color: #D57E7E;
