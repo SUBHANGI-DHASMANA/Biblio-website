@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Biblio - Home</title>
+</head>
+
+<body>
+  <!-- navbar -->
+
+  <nav>
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/about.html">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <h1 class="biblio">Biblio</h1>
+        </div>
+        <div class="toggle-container col d-flex flex-row-reverse">
+          <span class="cart-item-count">0</span>
+          <button class="toggle-cart cart-btn" onclick="location.href = 'pages/products.html'">
+            <i class="fas fa-shopping-cart fa-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- /navbar -->
+
+  <!-- main section -->
+
+  <section class="main">
+    <div class="main-container">
+      <h1 class="text-slanted">Branded Choice</h1>
+      <h3 class="pb-4">Best sell books collection</h3>
+      <a href="pages/products.html" class="main-btn">Buy now</a>
+    </div>
+  </section>
+
+  <!-- /main section -->
+
+  <div class="sidebar-overlay">
+    <aside class="sidebar">
+
+      <button class="sidebar-close">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <ul class="sidebar-links">
+        <li>
+          <a href="index.html" class="sidebar-link">
+            <i class="fas fa-home fa-fw"></i>
+            home
+          </a>
+        </li>
+        <li>
+          <a href="products.html" class="sidebar-link">
+            <i class="fas fa-couch fa-fw"></i>
+            products
+          </a>
+        </li>
+        <li>
+          <a href="about.html" class="sidebar-link">
+            <i class="fas fa-book fa-fw"></i>
+            about
+          </a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+  <!-- cart -->
+  <div class="cart-overlay">
+    <aside class="cart">
+      <button class="cart-close">
+        <i class="fas fa-times"></i>
+      </button>
+      <header>
+        <h3 style="font-family: 'Kaushan Script', cursive;">your bag</h3>
+      </header>
+      <!-- cart items -->
+      <div class="cart-items"></div>
+      <!-- footer -->
+      <footer>
+        <h3 class="cart-total" style="font-family: 'Kaushan Script', cursive;">
+          total : $12.99
+        </h3>
+        <button class="cart-checkout btn">checkout</button>
+      </footer>
+    </aside>
+  </div>
+
+  <!-- trending -->
+
+  <section class="section trending my-5 container">
+    <div class="title d-flex justify-content-center">
+      <h2>
+        <i class="fa-solid fa-highlighter"></i>
+        <span>What's Trending?</span>
+      </h2>
+    </div>
+    <div class="d-flex justify-content-center my-4 row">
+      <article class="product col">
+        <div class="product-container">
+          <img src="img/Book1.jpg" class="product-img img" />
+
+          <div class="product-icons d-flex justify-content-center">
+            <!-- <a href="product.html?id=1" class="product-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a> -->
+            <button class="product-cart-btn product-icon" data-id="1">
+              <i class="fas fa-shopping-cart prod-cart"></i>
+            </button>
+          </div>
+        </div>
+        <footer>
+          <p class="product-name">The Monk who sold his Ferrari</p>
+          <h4 class="product-price">₹350</h4>
+        </footer>
+      </article>
+      <article class="product col">
+        <div class="product-container">
+          <img src="img/Book2.jpg" class="product-img img" />
+
+          <div class="product-icons d-flex justify-content-center">
+            <!-- <a href="product.html?id=1" class="product-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a> -->
+            <button class="product-cart-btn product-icon" data-id="1">
+              <i class="fas fa-shopping-cart prod-cart"></i>
+            </button>
+          </div>
+        </div>
+        <footer>
+          <p class="product-name">The Monk who sold his Ferrari</p>
+          <h4 class="product-price">₹350</h4>
+        </footer>
+      </article>
+      <article class="product col">
+        <div class="product-container">
+          <img src="img/Book3.jpg" class="product-img img" />
+
+          <div class="product-icons d-flex justify-content-center">
+            <!-- <a href="product.html?id=1" class="product-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a> -->
+            <button class="product-cart-btn product-icon" data-id="1">
+              <i class="fas fa-shopping-cart prod-cart"></i>
+            </button>
+          </div>
+        </div>
+        <footer>
+          <p class="product-name">The Monk who sold his Ferrari</p>
+          <h4 class="product-price">₹350</h4>
+        </footer>
+      </article>
+      <article class="product col">
+        <div class="product-container">
+          <img src="img/Book4.jpg" class="product-img img" />
+
+          <div class="product-icons d-flex justify-content-center">
+            <!-- <a href="product.html?id=1" class="product-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a> -->
+            <button class="product-cart-btn product-icon" data-id="1">
+              <i class="fas fa-shopping-cart prod-cart"></i>
+            </button>
+          </div>
+        </div>
+        <footer>
+          <p class="product-name">The Monk who sold his Ferrari</p>
+          <h4 class="product-price">₹350</h4>
+        </footer>
+      </article>
+    </div>
+    <div class="d-flex justify-content-center">
+      <a href="pages/products.html" class="btn">SEE MORE BOOKS</a>
+    </div>
+  </section>
+
+  <!-- /trending -->
+
+  <!-- footer -->
+  <footer class="d-flex justify-content-center home-end">
+    <p>Copyright © 2022 Subhangi Dhasmana</p>
+  </footer>
+  <!-- /footer -->
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
