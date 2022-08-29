@@ -1,3 +1,9 @@
+const loader = document.querySelector(".loader-wrapper");
+window.addEventListener("load", function () {
+  document.querySelector("body").style.overflow = "scroll";
+  loader.style.display = "none";
+});
+
 // data
 
 const product = [
