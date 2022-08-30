@@ -476,7 +476,7 @@ function displayMenuItems(menuItems) {
     <div class="product-container">
       <img src="${item.image[0].img}" class="product-img img"/>
      
-      <div class="product-icons d-flex justify-content-center">
+      <div class="product-icons prod-page-icons">
         <button class="product-cart-btn product-icon" data-id="${item.id}">
           <i class="fas fa-shopping-cart prod-cart"></i>
         </button>

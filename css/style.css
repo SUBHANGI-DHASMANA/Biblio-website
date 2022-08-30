@@ -203,6 +203,32 @@ nav .row{
     border-radius:100% ;
     border: transparent;
     padding: 6px 10px;
+    place-items: center;
+    position: relative;
+    left: 40%;
+    top: 45%;
+}
+
+.product-icons{
+  width: 10rem;
+  height: 14rem;
+  position: relative;
+  bottom: 14rem;
+  left: 25%;
+  opacity: 0;
+}
+
+.product-icons:hover, .product-img:hover{
+  transition: all 0.3s linear;
+  opacity: 100%;
+}
+
+.product-container{
+  height: 250px;
+}
+
+.prod-page-icons{
+  left: 0;
 }
 
 .prod-cart{
